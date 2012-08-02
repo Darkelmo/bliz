@@ -487,6 +487,9 @@ void World::LoadConfigSettings(bool reload)
     rate_values[RATE_CREATURE_ELITE_RAREELITE_SPELLDAMAGE] = ConfigMgr::GetFloatDefault("Rate.Creature.Elite.RAREELITE.SpellDamage", 1.0f);
     rate_values[RATE_CREATURE_ELITE_WORLDBOSS_SPELLDAMAGE] = ConfigMgr::GetFloatDefault("Rate.Creature.Elite.WORLDBOSS.SpellDamage", 1.0f);
     rate_values[RATE_CREATURE_ELITE_RARE_SPELLDAMAGE]      = ConfigMgr::GetFloatDefault("Rate.Creature.Elite.RARE.SpellDamage", 1.0f);
+    rate_values[RATE_CREATURE_TEMP_SPELLDAMAGE]      = ConfigMgr::GetFloatDefault("Rate.Creature.TEMP.SpellDamage", 1.0f); //1
+    rate_values[RATE_CREATURE_TEMP_HP]      = ConfigMgr::GetFloatDefault("Rate.Creature.TEMP.HP", 1.0f); //2
+    rate_values[RATE_CREATURE_TEMP_DAMAGE]      = ConfigMgr::GetFloatDefault("Rate.Creature.TEMP.DAMAGE", 1.0f); //3
     rate_values[RATE_CREATURE_AGGRO]  = ConfigMgr::GetFloatDefault("Rate.Creature.Aggro", 1.0f);
     rate_values[RATE_REST_INGAME]                    = ConfigMgr::GetFloatDefault("Rate.Rest.InGame", 1.0f);
     rate_values[RATE_REST_OFFLINE_IN_TAVERN_OR_CITY] = ConfigMgr::GetFloatDefault("Rate.Rest.Offline.InTavernOrCity", 1.0f);

@@ -1208,6 +1208,8 @@ float Creature::_GetHealthMod(int32 Rank)
             return sWorld->getRate(RATE_CREATURE_ELITE_WORLDBOSS_HP);
         case CREATURE_ELITE_RARE:
             return sWorld->getRate(RATE_CREATURE_ELITE_RARE_HP);
+		case CREATURE_TEMP:
+            return sWorld->getRate(RATE_CREATURE_TEMP_HP);
         default:
             return sWorld->getRate(RATE_CREATURE_ELITE_ELITE_HP);
     }
@@ -1227,6 +1229,8 @@ float Creature::_GetDamageMod(int32 Rank)
             return sWorld->getRate(RATE_CREATURE_ELITE_WORLDBOSS_DAMAGE);
         case CREATURE_ELITE_RARE:
             return sWorld->getRate(RATE_CREATURE_ELITE_RARE_DAMAGE);
+		case CREATURE_TEMP:
+            return sWorld->getRate(RATE_CREATURE_TEMP_DAMAGE);
         default:
             return sWorld->getRate(RATE_CREATURE_ELITE_ELITE_DAMAGE);
     }
@@ -1246,6 +1250,8 @@ float Creature::GetSpellDamageMod(int32 Rank)
             return sWorld->getRate(RATE_CREATURE_ELITE_WORLDBOSS_SPELLDAMAGE);
         case CREATURE_ELITE_RARE:
             return sWorld->getRate(RATE_CREATURE_ELITE_RARE_SPELLDAMAGE);
+		case CREATURE_TEMP:
+            return sWorld->getRate(RATE_CREATURE_TEMP_SPELLDAMAGE);
         default:
             return sWorld->getRate(RATE_CREATURE_ELITE_ELITE_SPELLDAMAGE);
     }

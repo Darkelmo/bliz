@@ -1747,6 +1747,11 @@ Rate.Creature.Elite.Elite.HP     = 1
 Rate.Creature.Elite.RARE.HP      = 1
 Rate.Creature.Elite.RAREELITE.HP = 1
 Rate.Creature.Elite.WORLDBOSS.HP = 1
+######################################################################################################################
+Rate.Creature.TEMP.SpellDamage   = 1
+Rate.Creature.TEMP.HP            = 1
+Rate.Creature.TEMP.DAMAGE        = 1
+######################################################################################################################
 
 #
 #    ListenRange.Say
