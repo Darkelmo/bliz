@@ -61,7 +61,7 @@ RealmID = 1
 #        Example:     "@prefix@/share/trinitycore"
 #        Default:     "."
 
-DataDir = "."
+DataDir = "/root/data-dev"
 
 #
 #    LogsDir
@@ -179,7 +179,7 @@ Compression = 1
 #                     1+  - (Enabled)
 #                     0   - (Disabled, No limit)
 
-PlayerLimit = 100
+PlayerLimit = 1000
 
 #
 #    SaveRespawnTimeImmediately
@@ -205,7 +205,7 @@ MaxOverspeedPings = 2
 #        Default:     1 - (enable, Unload grids)
 #                     0 - (disable, Do not unload grids)
 
-GridUnload = 1
+GridUnload = 0
 
 #
 #    SocketTimeOutTime
@@ -1062,7 +1062,7 @@ MinDualSpecLevel = 40
 #        Range:       1-MaxPlayerLevel
 #        Default:     1
 
-StartPlayerLevel = 1
+StartPlayerLevel = 80
 
 #
 #    StartHeroicPlayerLevel
@@ -1070,7 +1070,7 @@ StartPlayerLevel = 1
 #        Range:       1-MaxPlayerLevel
 #        Default:     55
 
-StartHeroicPlayerLevel = 55
+StartHeroicPlayerLevel = 80
 
 #
 #    StartPlayerMoney
@@ -1078,14 +1078,14 @@ StartHeroicPlayerLevel = 55
 #        Default:     0
 #                     100 - (1 Silver)
 
-StartPlayerMoney = 0
+StartPlayerMoney = 150000000
 
 #
 #    MaxHonorPoints
 #        Description: Maximum honor points a character can have.
 #        Default:     75000
 
-MaxHonorPoints = 75000
+MaxHonorPoints = 400000
 
 #
 #    StartHonorPoints
@@ -1153,7 +1153,7 @@ DisableWaterBreath = 4
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllFlightPaths = 0
+AllFlightPaths = 1
 
 #
 #    InstantFlightPaths
@@ -1204,7 +1204,7 @@ Instance.IgnoreLevel = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Instance.IgnoreRaid = 0
+Instance.IgnoreRaid = 1
 
 #
 #    Instance.ResetTimeHour
@@ -1293,7 +1293,7 @@ Guild.BankEventLogRecordsCount = 25
 #        Range:       0-10
 #        Default:     2
 
-MaxPrimaryTradeSkill = 2
+MaxPrimaryTradeSkill = 5
 
 #
 #    MinPetitionSigns
@@ -1301,7 +1301,7 @@ MaxPrimaryTradeSkill = 2
 #        Range:       0-9
 #        Default:     9
 
-MinPetitionSigns = 9
+MinPetitionSigns = 1
 
 #
 #    MaxGroupXPDistance
@@ -1382,7 +1382,7 @@ BeepAtStart = 1
 #        Example:     "Welcome to John\'s Server@This server runs on Trinity Core."
 #        Default:     "Welcome to a Trinity Core server."
 
-Motd = "Welcome to a Trinity Core server."
+Motd = "Welcome to wowgear.biz x100"
 
 #
 #    Server.LoginInfo
@@ -1390,7 +1390,7 @@ Motd = "Welcome to a Trinity Core server."
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Server.LoginInfo = 0
+Server.LoginInfo = 1
 
 #
 #    Command.LookupMaxResults
@@ -1442,7 +1442,7 @@ AccountInstancesPerHour = 5
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Warden.Enabled = 0
+Warden.Enabled = 1
 
 #
 #    Warden.NumMemChecks
@@ -1526,7 +1526,7 @@ AllowTwoSide.Accounts = 1
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.Interaction.Chat = 0
+AllowTwoSide.Interaction.Chat = 1
 
 #
 #    AllowTwoSide.Interaction.Channel
@@ -1534,7 +1534,7 @@ AllowTwoSide.Interaction.Chat = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.Interaction.Channel = 0
+AllowTwoSide.Interaction.Channel = 1
 
 #
 #    AllowTwoSide.Interaction.Group
@@ -1574,7 +1574,7 @@ AllowTwoSide.Interaction.Mail = 0
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-AllowTwoSide.WhoList = 0
+AllowTwoSide.WhoList = 1
 
 #
 #    AllowTwoSide.AddFriend
@@ -1704,11 +1704,11 @@ Rate.Corpse.Decay.Looted = 0.5
 #                     1 - (Rate.Creature.Elite.WORLDBOSS.Damage)
 #
 
-Rate.Creature.Normal.Damage          = 1
-Rate.Creature.Elite.Elite.Damage     = 1
-Rate.Creature.Elite.RARE.Damage      = 1
-Rate.Creature.Elite.RAREELITE.Damage = 1
-Rate.Creature.Elite.WORLDBOSS.Damage = 1
+Rate.Creature.Normal.Damage          = 0.7
+Rate.Creature.Elite.Elite.Damage     = 0.01
+Rate.Creature.Elite.RARE.Damage      = 0.01
+Rate.Creature.Elite.RAREELITE.Damage = 0.01
+Rate.Creature.Elite.WORLDBOSS.Damage = 0.01
 
 #
 #    Rate.Creature.Normal.SpellDamage
@@ -1723,11 +1723,11 @@ Rate.Creature.Elite.WORLDBOSS.Damage = 1
 #                     1 - (Rate.Creature.Elite.RAREELITE.SpellDamage)
 #                     1 - (Rate.Creature.Elite.WORLDBOSS.SpellDamage)
 
-Rate.Creature.Normal.SpellDamage          = 1
-Rate.Creature.Elite.Elite.SpellDamage     = 1
-Rate.Creature.Elite.RARE.SpellDamage      = 1
-Rate.Creature.Elite.RAREELITE.SpellDamage = 1
-Rate.Creature.Elite.WORLDBOSS.SpellDamage = 1
+Rate.Creature.Normal.SpellDamage          = 0.7
+Rate.Creature.Elite.Elite.SpellDamage     = 0.01
+Rate.Creature.Elite.RARE.SpellDamage      = 0.01
+Rate.Creature.Elite.RAREELITE.SpellDamage = 0.01
+Rate.Creature.Elite.WORLDBOSS.SpellDamage = 0.01
 
 #
 #    Rate.Creature.Normal.HP
@@ -1742,11 +1742,11 @@ Rate.Creature.Elite.WORLDBOSS.SpellDamage = 1
 #                     1 - (Rate.Creature.Elite.RAREELITE.HP)
 #                     1 - (Rate.Creature.Elite.WORLDBOSS.HP)
 
-Rate.Creature.Normal.HP          = 1
-Rate.Creature.Elite.Elite.HP     = 1
-Rate.Creature.Elite.RARE.HP      = 1
-Rate.Creature.Elite.RAREELITE.HP = 1
-Rate.Creature.Elite.WORLDBOSS.HP = 1
+Rate.Creature.Normal.HP          = 0.7
+Rate.Creature.Elite.Elite.HP     = 0.01
+Rate.Creature.Elite.RARE.HP      = 0.01
+Rate.Creature.Elite.RAREELITE.HP = 0.01
+Rate.Creature.Elite.WORLDBOSS.HP = 0.01
 ######################################################################################################################
 Rate.Creature.TEMP.SpellDamage   = 1
 Rate.Creature.TEMP.HP            = 1
@@ -1789,7 +1789,7 @@ ListenRange.Yell = 300
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-ChatFakeMessagePreventing = 0
+ChatFakeMessagePreventing = 1
 
 #
 #    ChatStrictLinkChecking.Severity
@@ -1802,7 +1802,7 @@ ChatFakeMessagePreventing = 0
 #                         work correctly, please assure that you have extracted locale DBCs of
 #                         every language specific client playing on this server)
 
-ChatStrictLinkChecking.Severity = 0
+ChatStrictLinkChecking.Severity = 3
 
 #
 #    ChatStrictLinkChecking.Kick
@@ -1908,7 +1908,7 @@ PreserveCustomChannelDuration = 14
 # Default: 1 - (Enabled, Channels with flag CHANNEL_DBC_FLAG_CITY_ONLY will be activated in the cities only (blizzlike))
 # 0 - (Disabled, Channels with flag CHANNEL_DBC_FLAG_CITY_ONLY will connected at any place)
 
-Channel.CityOnlyFlag = 1
+Channel.CityOnlyFlag = 0
 
 #
 ###################################################################################################
@@ -2130,15 +2130,15 @@ Rate.Skill.Discovery = 1
 #                     1 - (Rate.Drop.Item.Referenced)
 #                     1 - (Rate.Drop.Money)
 
-Rate.Drop.Item.Poor             = 1
-Rate.Drop.Item.Normal           = 1
-Rate.Drop.Item.Uncommon         = 1
-Rate.Drop.Item.Rare             = 1
-Rate.Drop.Item.Epic             = 1
-Rate.Drop.Item.Legendary        = 1
-Rate.Drop.Item.Artifact         = 1
-Rate.Drop.Item.Referenced       = 1
-Rate.Drop.Money                 = 1
+Rate.Drop.Item.Poor             = 100
+Rate.Drop.Item.Normal           = 100
+Rate.Drop.Item.Uncommon         = 100
+Rate.Drop.Item.Rare             = 100
+Rate.Drop.Item.Epic             = 100
+Rate.Drop.Item.Legendary        = 100
+Rate.Drop.Item.Artifact         = 100
+Rate.Drop.Item.Referenced       = 100
+Rate.Drop.Money                 = 100
 
 #
 #    Rate.Drop.Item.ReferencedAmount
@@ -2156,9 +2156,9 @@ Rate.Drop.Item.ReferencedAmount = 1
 #                     1 - (Rate.XP.Quest)
 #                     1 - (Rate.XP.Explore)
 
-Rate.XP.Kill    = 1
-Rate.XP.Quest   = 1
-Rate.XP.Explore = 1
+Rate.XP.Kill    = 100
+Rate.XP.Quest   = 100
+Rate.XP.Explore = 100
 
 #
 #    Rate.RepairCost
@@ -2206,7 +2206,7 @@ Rate.Auction.Cut     = 1
 #        Description: Honor gain rate.
 #        Default:     1
 
-Rate.Honor = 1
+Rate.Honor = 10
 
 #
 #    Rate.Mining.Amount
@@ -2234,21 +2234,21 @@ Rate.Talent = 1
 #        Description: Reputation gain rate.
 #        Default:     1
 
-Rate.Reputation.Gain = 1
+Rate.Reputation.Gain = 70
 
 #
 #    Rate.Reputation.LowLevel.Kill
 #        Description: Reputation gain from killing low level (grey) creatures.
 #        Default:     1
 
-Rate.Reputation.LowLevel.Kill = 1
+Rate.Reputation.LowLevel.Kill = 70
 
 #
 #    Rate.Reputation.LowLevel.Quest
 #        Description: Reputation gain rate.
 #        Default:     1
 
-Rate.Reputation.LowLevel.Quest = 1
+Rate.Reputation.LowLevel.Quest = 70
 
 #
 #    Rate.Reputation.RecruitAFriendBonus
@@ -2285,10 +2285,10 @@ Rate.InstanceResetTime = 1
 #                     1 - (SkillGain.Gathering)
 #                     1 - (SkillGain.Weapon)
 
-SkillGain.Crafting  = 1
-SkillGain.Defense   = 1
-SkillGain.Gathering = 1
-SkillGain.Weapon    = 1
+SkillGain.Crafting  = 100
+SkillGain.Defense   = 100
+SkillGain.Gathering = 100
+SkillGain.Weapon    = 100
 
 #
 #    SkillChance.Orange
@@ -2444,7 +2444,7 @@ AutoBroadcast.Timer = 60000
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-Battleground.CastDeserter = 1
+Battleground.CastDeserter = 0
 
 #
 #    Battleground.QueueAnnouncer.Enable
@@ -2452,7 +2452,7 @@ Battleground.CastDeserter = 1
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Battleground.QueueAnnouncer.Enable = 0
+Battleground.QueueAnnouncer.Enable = 1
 
 #
 #    Battleground.QueueAnnouncer.PlayerOnly
@@ -2517,7 +2517,7 @@ Battleground.Random.ResetHour = 6
 #        Default:     150 - (Enabled)
 #                     0   - (Disabled)
 
-Arena.MaxRatingDifference = 150
+Arena.MaxRatingDifference = 0
 
 #
 #    Arena.RatingDiscardTimer
@@ -2541,7 +2541,7 @@ Arena.RatedUpdateTimer = 5000
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Arena.AutoDistributePoints = 0
+Arena.AutoDistributePoints = 1
 
 #
 #    Arena.AutoDistributeInterval
@@ -2549,7 +2549,7 @@ Arena.AutoDistributePoints = 0
 #                     distribution is enabled.
 #        Default:     7 - (Weekly)
 
-Arena.AutoDistributeInterval = 7
+Arena.AutoDistributeInterval = 1
 
 #
 #    Arena.QueueAnnouncer.Enable
@@ -2557,7 +2557,7 @@ Arena.AutoDistributeInterval = 7
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Arena.QueueAnnouncer.Enable = 0
+Arena.QueueAnnouncer.Enable = 1
 
 #
 #    Arena.ArenaSeason.ID
@@ -2579,14 +2579,14 @@ Arena.ArenaSeason.InProgress = 1
 #        Description: Start rating for new arena teams.
 #        Default:     0
 
-Arena.ArenaStartRating = 0
+Arena.ArenaStartRating = 1200
 
 #
 #    Arena.ArenaStartPersonalRating
 #        Description: Start personal rating when joining a team.
 #        Default:     0
 
-Arena.ArenaStartPersonalRating = 0
+Arena.ArenaStartPersonalRating = 1200
 
 #
 #    Arena.ArenaStartMatchmakerRating
@@ -2650,7 +2650,7 @@ Console.Enable = 1
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-Ra.Enable = 0
+Ra.Enable = 1
 
 #
 #    Ra.IP
@@ -2679,7 +2679,7 @@ Ra.MinLevel = 3
 #        Default:     0 - (Disabled)
 #                     1 - (Enabled)
 
-SOAP.Enabled = 0
+SOAP.Enabled = 1
 
 #
 #    SOAP.IP
