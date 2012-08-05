@@ -15,6 +15,7 @@ set(scripts_STAT_SRCS
   Custom/argent_tournament.cpp
   Custom/dalaran_squirrel.cpp
   Custom/npc_transmogrify.cpp
+  Custom/arena_spectator.cpp
 )
 
 message("  -> Prepared: Custom")

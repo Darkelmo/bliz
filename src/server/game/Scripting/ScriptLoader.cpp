@@ -26,6 +26,8 @@ void AddSC_example_misc();
 void AddSC_example_commandscript();
 // Transmogrify
 void AddSC_transmogrify_script();
+// Arena Spectator
+void AddSC_arena_spectator_script();
 
 //TeleNPC2
 void AddSC_npc_teleport();
@@ -1290,6 +1292,7 @@ void AddBattlegroundScripts()
 void AddCustomScripts()
 {
     AddSC_transmogrify_script();
+    AddSC_arena_spectator_script();
 #ifdef SCRIPTS
     /* This is where custom scripts should be added. */
     //TeleNPC2
