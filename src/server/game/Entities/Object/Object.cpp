@@ -2189,6 +2189,7 @@ void WorldObject::SendMessageToSet(WorldPacket* data, Player const* skipped_rcvr
     VisitNearbyWorldObject(GetVisibilityRange(), notifier);
 }
 
+
 void WorldObject::SendObjectDeSpawnAnim(uint64 guid)
 {
     WorldPacket data(SMSG_GAMEOBJECT_DESPAWN_ANIM, 8);

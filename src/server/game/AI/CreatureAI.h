@@ -132,6 +132,10 @@ class CreatureAI : public UnitAI
         virtual void JustReachedHome() {}
 
         void DoZoneInCombat(Creature* creature = NULL, float maxRangeToNearestTarget = 50.0f);
+		
+		//Revert...
+        //void DoAttackerAreaInCombat(Unit* attacker, float range, Unit* pUnit = NULL);
+        //void DoAttackerGroupInCombat(Player* attacker);
 
         // Called at text emote receive from player
         virtual void ReceiveEmote(Player* /*player*/, uint32 /*emoteId*/) {}

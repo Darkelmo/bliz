@@ -79,6 +79,11 @@ enum UlduarNPCs
     NPC_VEZAX                               = 33271,
     NPC_YOGGSARON                           = 33288,
     NPC_ALGALON                             = 32871,
+	
+    NPC_BRANN_BRONZBEARD         = 33579,
+    NPC_BRANZ_BRONZBEARD         = 33579,
+    NPC_DELORAH                  = 33701,
+    NPC_ULDUAR_GAUNTLET_GENERATOR= 33571, // Trigger tied to towers
 
     // Mimiron
     NPC_LEVIATHAN_MKII                      = 33432,
@@ -170,6 +175,10 @@ enum UlduarGameObjects
     GO_DOODAD_UL_ULDUAR_TRAPDOOR_03         = 194253,
     GO_GIFT_OF_THE_OBSERVER_10              = 194821,
     GO_GIFT_OF_THE_OBSERVER_25              = 194822,
+	
+    // Dummies - not yet in db
+    GO_LEVIATHAN_CHEST_10       = 555555,
+    GO_LEVIATHAN_CHEST_25       = 444444
 };
 
 enum LeviathanData
@@ -190,6 +199,11 @@ enum UlduarAchievementCriteriaIds
     CRITERIA_CON_SPEED_ATORY    = 21597,
     CRITERIA_DISARMED           = 21687,
     CRITERIA_HERALD_OF_TITANS   = 10678,
+};
+
+enum UlduarActions	
+{	
+    ACTION_ACTIVATE_HARD_MODE        = 12,	
 };
 
 enum UlduarData
@@ -226,6 +240,13 @@ enum UlduarWorldStates
 {
     WORLD_STATE_ALGALON_DESPAWN_TIMER   = 4131,
     WORLD_STATE_ALGALON_TIMER_ENABLED   = 4132,
+};
+
+//Fix by jacob TODO: zapilit' map_ulduar.old
+enum UlduarArea
+{
+    MAP_ULDUAR              = 603,
+    AREA_FORMATION_GROUNDS  = 4652
 };
 
 enum UlduarAchievementData
