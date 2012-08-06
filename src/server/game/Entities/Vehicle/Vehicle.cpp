@@ -50,6 +50,7 @@ Vehicle::~Vehicle()
 {
     for (SeatMap::const_iterator itr = Seats.begin(); itr != Seats.end(); ++itr);
         //ASSERT(!itr->second.Passenger);
+        itr->second.passenger = NULL;
 }
 
 void Vehicle::Install()
