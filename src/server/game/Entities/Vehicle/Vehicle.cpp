@@ -49,8 +49,7 @@ Vehicle::Vehicle(Unit* unit, VehicleEntry const* vehInfo, uint32 creatureEntry) 
 Vehicle::~Vehicle()
 {
     for (SeatMap::const_iterator itr = Seats.begin(); itr != Seats.end(); ++itr);
-        //ASSERT(!itr->second.Passenger);
-        itr->second.passenger = NULL;
+   //ASSERT(!itr->second.Passenger); 
 }
 
 void Vehicle::Install()
