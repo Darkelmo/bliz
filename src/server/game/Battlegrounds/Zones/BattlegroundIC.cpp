@@ -120,9 +120,9 @@ void BattlegroundIC::PostUpdateImpl(uint32 diff)
             GetBGObject(BG_IC_GO_DOODAD_ND_HUMAN_GATE_CLOSEDFX_DOOR01_1)->RemoveFromWorld();
             GetBGObject(BG_IC_GO_DOODAD_ND_HUMAN_GATE_CLOSEDFX_DOOR01_2)->RemoveFromWorld();
             GetBGObject(BG_IC_GO_DOODAD_ND_HUMAN_GATE_CLOSEDFX_DOOR01_3)->RemoveFromWorld();
-            /*GetBGObject(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_1)->RemoveFromWorld();
+            GetBGObject(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_1)->RemoveFromWorld();
             GetBGObject(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_2)->RemoveFromWorld();
-            GetBGObject(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_3)->RemoveFromWorld();*/
+            GetBGObject(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_3)->RemoveFromWorld();
 
             GetBGObject(BG_IC_GO_ALLIANCE_GATE_1)->SetFlag(GAMEOBJECT_FLAGS, GO_FLAG_DAMAGED); // Alliance door
             GetBGObject(BG_IC_GO_ALLIANCE_GATE_2)->SetFlag(GAMEOBJECT_FLAGS, GO_FLAG_DAMAGED); // Alliance door
@@ -134,6 +134,8 @@ void BattlegroundIC::PostUpdateImpl(uint32 diff)
             doorsClosed = true;
         } else closeFortressDoorsTimer -= diff;
     }
+
+
     for (uint8 i = NODE_TYPE_REFINERY; i < MAX_NODE_TYPES; i++)
     {
         if (nodePoint[i].nodeType == NODE_TYPE_DOCKS)
@@ -270,7 +272,9 @@ void BattlegroundIC::StartingEventOpenDoors()
     DoorOpen(BG_IC_GO_DOODAD_ND_HUMAN_GATE_CLOSEDFX_DOOR01_1);
     DoorOpen(BG_IC_GO_DOODAD_ND_HUMAN_GATE_CLOSEDFX_DOOR01_2);
     DoorOpen(BG_IC_GO_DOODAD_ND_HUMAN_GATE_CLOSEDFX_DOOR01_3);
-    DoorOpen(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01);
+    DoorOpen(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_1);
+    DoorOpen(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_2);
+    DoorOpen(BG_IC_GO_DOODAD_ND_WINTERORC_WALL_GATEFX_DOOR01_3);
 
     DoorOpen(BG_IC_GO_DOODAD_HU_PORTCULLIS01_1);
     DoorOpen(BG_IC_GO_DOODAD_HU_PORTCULLIS01_2);
@@ -286,6 +290,7 @@ void BattlegroundIC::StartingEventOpenDoors()
             sLog->outError("Isle of Conquest | Starting Event Open Doors: There was an error spawning gameobject %u", BG_IC_Teleporters[i].entry);
     }
 }
+
 
 bool BattlegroundIC::IsAllNodesConrolledByTeam(uint32 team) const
 {
