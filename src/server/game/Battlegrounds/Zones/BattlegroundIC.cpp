@@ -202,7 +202,7 @@ void BattlegroundIC::PostUpdateImpl(uint32 diff)
         // the point is waiting for a change on its banner
         if (nodePoint[i].needChange)
         {
-            if (nodePoint[i].timer <= diff)
+            if (docksTimer <= diff)
             {
                 uint32 nextBanner = GetNextBanner(&nodePoint[i], nodePoint[i].faction, true);
 
@@ -229,7 +229,7 @@ void BattlegroundIC::PostUpdateImpl(uint32 diff)
 
                 nodePoint[i].needChange = false;
                 nodePoint[i].timer = BANNER_STATE_CHANGE_TIME;
-            } else nodePoint[i].timer -= diff;
+            } else docksTimer -= diff;
         }
     }
 
