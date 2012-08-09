@@ -1493,6 +1493,9 @@ void World::SetInitialWorldSettings()
     sLog->outString("Loading UNIT_NPC_FLAG_SPELLCLICK Data..."); // must be after LoadQuests
     sObjectMgr->LoadNPCSpellClickSpells();
 
+    sLog->outString("Loading Chat Filter Words...");
+    sObjectMgr->LoadChatFilter();
+
     sLog->outString("Loading Vehicle Template Accessories...");
     sObjectMgr->LoadVehicleTemplateAccessories();                // must be after LoadCreatureTemplates() and LoadNPCSpellClickSpells()
 

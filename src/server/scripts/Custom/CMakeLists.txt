@@ -16,6 +16,7 @@ set(scripts_STAT_SRCS
   Custom/dalaran_squirrel.cpp
   Custom/npc_transmogrify.cpp
   Custom/arena_spectator.cpp
+  Custom/chat_filter_playerscript.cpp
 )
 
 message("  -> Prepared: Custom")

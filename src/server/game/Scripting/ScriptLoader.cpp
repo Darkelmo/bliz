@@ -634,6 +634,9 @@ void AddSC_wintergrasp();
 // player
 void AddSC_chat_log();
 
+// Chat Filter
+void AddSC_chat_filter_playerscript();
+
 #endif
 
 void AddScripts()
@@ -733,6 +736,7 @@ void AddWorldScripts()
     AddSC_npc_taxi();
     AddSC_achievement_scripts();
     AddSC_chat_log();
+    AddSC_chat_filter_playerscript();
 #endif
 }
 
