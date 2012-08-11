@@ -913,7 +913,14 @@ public:
         {
             if (!apply)
                 if (Creature* miner = Unit::GetCreature(*me, minerGUID))
+                {
                     miner->DisappearAndDie();
+                    if (Unit* player = Unit::GetPlayer(*me, me->GetCreatorGUID()))
+                    {
+                        player->RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_IMMUNE_TO_PC);
+                        player->RemoveFlag(UNIT_FIELD_FLAGS, UNIT_FLAG_IMMUNE_TO_NPC);
+                    }
+                }
         }
     };
 
